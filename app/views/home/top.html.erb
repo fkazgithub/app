@@ -1,0 +1,113 @@
+
+<div class = "title">
+<h1>自己紹介</h1>
+</div>
+<div style="float:left">
+
+<h2>　京都産業大学</h2>
+<div class = "font">
+<p>コンピュータ理工学部</p>
+<p>コンピュータサイエンス学科</p>
+<p>河合研</p>
+</div>
+<img id="gazo" onclick="changeIMG()" src="assets/kyosan.jpg"
+   width="320" height="240" border="0" alt="">
+<script>
+
+//画像を配列に格納する
+var img = new Array();
+
+img[0] = new Image();
+img[0].src = "assets/kyosan.jpg";
+img[1] = new Image();
+img[1].src = "assets/flo.jpg";
+img[2] = new Image();
+img[2].src = "assets/14map.jpg";
+
+
+//画像番号用のグローバル変数
+var cnt=0;
+
+
+//画像切り替え関数
+function changeIMG(){
+  
+  //画像番号を進める
+  if (cnt == 2)
+  { cnt=0; }
+  else
+  { cnt++; }
+  
+  //画像を切り替える
+  document.getElementById("gazo").src=img[cnt].src;
+}
+
+</script>
+
+</div>
+
+<div style="float:left">
+<h2>趣味</h2>
+<div class = "font">
+<p>ツーリング</p>
+<p>バイク屋めぐり</p>
+<br>
+</div>
+
+<div class = "flont">
+   <img src="assets/bike2.jpg"
+   width="440" height="240" border="0" alt="">
+
+</div>
+</div>
+
+
+
+<div style="float:left">
+<h2>開発環境</h2>
+
+
+<div class = "flont1">
+   <img src="assets/ruby.jpg"
+   width="200" height="100" border="0" alt="">
+</div>
+
+<div style="float:left;">
+<div class = "flont2">
+   <img src="assets/Sublime.png"
+   width="120" height="120" border="0" alt="">
+</div>
+</div>
+
+<div style="float:left;">
+<div class = "flont3">
+   <img src="assets/rails.png"
+   width="160" height="100" border="0" alt="">
+</div>
+</div>
+
+
+</div>
+
+
+<div class = "sum">
+<div style="float:left;">
+<div class = "flont4">
+   <img src="assets/python.png"
+   width="130" height="150" border="0" alt="">
+</div>
+</div>
+
+<div style="float:left;">
+<div class = "flont5">
+   <img src="assets/html.jpg"
+   width="200" height="100" border="0" alt="">
+</div>
+</div>
+</div>
+
+
+
+
+
+
